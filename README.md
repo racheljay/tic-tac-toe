@@ -56,16 +56,33 @@ who's turn is it?
 # Game Win Logic
 
 What are the winning combinations?
-    -winningComos = [an array]
+    - winningComos = [an array]
 How do I know which ones have been selected
-    -check the text content
+    - check the text content
+    - get tile id
+    - equate tile id to position on a winning scores array
 
 compare the changed squres to the winning combos
+    - x is 3, o is 5
+    - add the numbers to get either 9 or 15 for a win
 stop the game if there is a winner, or stop the game if there is a tie
+    - if the full board is 35 you know there is a draw
+
 
 Win condition () {
-
+    arr = winning combos
+    for(loop through arr) {
+        if(combo = 9) {
+            x wins
+        } else (if combo = 15) {
+            o wins
+        } else if(board = 35) {
+            game is drawn
+        }
+    }
 }
+
+
 
 # Game Logic group code
 on tile click
