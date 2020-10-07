@@ -187,7 +187,7 @@ function checkWinner() {
     }
     //in case of a tie:
     if (total === 35 && sol[i] !== 9) {
-        header.innerHTML = "Sometimes we all loose"
+        header.innerHTML = "Sometimes we all lose"
         gameStatus = false;
     }
 
